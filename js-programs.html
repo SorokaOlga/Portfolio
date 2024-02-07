@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Soroka Olga. Interesting js-programs. </title>
+    <meta name="starting" content="Interesting js-programs. 🌟 Paint your own picture 🌟 TO DO List">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- JQuery -->
+    <script defer type="text/javascript" src="js/jquery.js"></script>
+    <script defer type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<header>
+<div id="top" style="display: none;"></div>
+<a href="tel:+380639545262">
+    <div class="handset">
+        <i class="fa fa-phone"></i>
+    </div>
+</a>
+<div class="header">
+    <div class="login" style="font-weight: bold;">
+        <span class="">S</span>
+        <span class="">O</span>
+        <span class="">R</span>
+        <span class="">O</span>
+        <span class="">K</span>
+        <span class="active">A</span>
+    </div>
+    <div class="contacts-block">
+                <div>
+                    <a href="" target="_blank">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                       <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                     <i class="far fa-envelope-open"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                       <i class="fab fa-skype"></i>
+                    </a>
+                </div>
+            </div>
+</div>
+</header>
+<main>
+<div class="my_works" id="works">
+    <div class="container">     
+    <h2 id="myHeader">TO DO List</h2>
+    <input type="button" id="addButton" value="Add" onclick="addTask()"/>   
+    <input type="text" id="input", placeholder="enter task …"/>  
+<hr>
+    
+<ul id="tasks">
+  <li>
+    <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
+    <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+    <input type="button" class="important" onclick="important(this.parentNode)" value="!" />
+    make todo list
+  </li>
+  
+    </ul>
+<hr>
+   
+    </div>
+</div>
+<div class="my_works" id="works">
+    <div class="container">     
+    <h2 id="myHeader">Paint your own picture</h2>
+    
+<p> Налаштувати ширину
+<input type="text" onchange="setWidth(this.value)"  >  
+  Налаштувати висоту
+  <input type="text" onchange="setHeight(this.value)" >
+</p>
+
+<canvas id="canvas1" onmousedown="startPaint()"   onmousemove="doPaint(event)" onmouseup="endPaint()"></canvas>
+<div class="paint-tools">
+<div class="color-change"><p>Колір пензля</p> <input type="color" value="#000" onchange="setColor(this.value)" /></div>
+<div><p>Розмір пензля <input type="range" id="sizeInput" min="1" max="50" value="20" oninput="resizeBrush(this.value)" />
+<output id="sizeOutput">20</output> </p></div>
+<p> <input type="button" id="clear" class="sliding-button" value="Очистити" onclick="clearCanvas()"/></p>
+</div>
+<hr>
+   
+    </div>
+</div>
+</main>
+<footer>
+    <div class="container">
+        <div class="contacts">
+            <div class="contacts-block">
+                <div>
+                    <a href="" target="_blank">
+                        <img src="img/telegram.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="img/linkedin.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="img/email.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="img/skype.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body></html>
