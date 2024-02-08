@@ -233,7 +233,7 @@ textarea {
 
 .starting {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -691,7 +691,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 45%;
     min-height: 600px;
     background-color: white;
 }
