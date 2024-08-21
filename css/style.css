@@ -619,7 +619,7 @@ footer {
         background-size: contain;
     }
 
-    .starting_text-title, .starting_text-description {
+     .starting_text-description {
         font-size: 21px;
     }
 
@@ -634,9 +634,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .starting_text-title {
-        font-size: 14px;
-    }
 
     body .btn, body .btn2 {
         width: 200px;
