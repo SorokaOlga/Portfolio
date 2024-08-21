@@ -663,6 +663,9 @@ footer {
     font-size: 30px;
     margin-right: 15px;
 }
+    .far {
+        margin-right: 0px;
+    }
 }
 
 
